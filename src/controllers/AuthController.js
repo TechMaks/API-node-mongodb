@@ -6,6 +6,7 @@ const router = express.Router();
 router.use(express.json());
 
 // Rota de registro de usuário
+// Roga para test: http://localhost:3001/auth/register
 router.post("/register", (req, res) => {
   console.log(req.body);
   return res.json({
